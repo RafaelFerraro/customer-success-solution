@@ -5,11 +5,6 @@ require_relative 'balance_report'
 require_relative 'result'
 require_relative 'eligible_customers'
 
-# Como você chegou na solução?
-# - Primeiro eu tentei resolver o problema, fazer os testes passar. Depois me preocupei com a legibilidade do código. Pra fazer os testes passarem eu li o problema e o que era esperado e entendi os exemplos, depois eu fui olhar os testes e ver os cenários, eles me ajudaram a entender ainda mais o problema e o que eu tinha que fazer, pois eu vi o input e o output de forma mais clara, depois foi entender como eu iria trabalhar com esses inputs e por fim eu fui pensando e escrevendo em um papel em como eu chegaria nessa solução, passo a passo mesmo, por exemplo, acho que a primeira coisa foi remover os customer-success inativos e deixar só os elegiveis, ai pra cada um deles eu precisaria verificar qual cliente ele poderia atender, mas aí eu vi que se eu começasse com os css de maior score isso não iria funcionar, pois eu iria deixar os de menor score sem atendimento, então eu vi que tinha que ordenar essa lista e fui indo. Tentei jogar tudo no papel antes e aos poucos eu ia validando com alguns testes.
-# Quando terminei vi que estava muito difícil para alguém ler, então eu comecei a refatorar. Fui separando algumas partes, dando nome a eles, jogando para classes específicas e sempre rodando os testes para ver se não havia quebrado nada.
-# O que você melhoraria?
-# Qual foi a melhor parte?
 class CustomerSuccessBalancing
   def initialize(customer_success, customers, customer_success_away)
     @customer_success = customer_success
