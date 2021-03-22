@@ -1,4 +1,6 @@
 version: 2.1
 jobs:
+  docker:
+    - image: ubuntu
   build:
     - run: echo "Hello world"
