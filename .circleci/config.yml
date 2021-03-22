@@ -1,6 +1,6 @@
-version: 2.1
+version: 2
 jobs:
   docker:
-    - image: ubuntu
+    - image: circleci/ruby:2.4.1
   build:
     - run: echo "Hello world"
