@@ -1,0 +1,4 @@
+version: 2.0
+jobs:
+  build:
+    - run: echo "Hello world"
