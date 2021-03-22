@@ -4,5 +4,6 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
-      - run: ls
       - run: echo "Hello world"
+      - run: echo "Run tests"
+      - run: ruby tests/customer_success_balancing_test.rb
