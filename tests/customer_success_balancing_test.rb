@@ -48,7 +48,7 @@ class CustomerSuccessBalancingTests < Minitest::Test
 
     balancer = CustomerSuccessBalancing.new(customer_success_repository, customers_repository)
 
-    result = Timeout.timeout(1.0) { balancer.execute }
+    result = Timeout.timeout(3.0) { balancer.execute }
     assert_equal 999, result
   end
 
