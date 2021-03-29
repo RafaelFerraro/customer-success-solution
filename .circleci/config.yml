@@ -2,7 +2,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: ferrarorafael/customer-success-solution:v1
+
+    working_directory: /usr/src/app
+
     steps:
+      - checkout
       - run: echo "Hello world"
       - run: echo "Run tests"
