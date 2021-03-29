@@ -8,5 +8,7 @@ jobs:
 
     steps:
       - checkout
+
       - run: echo "Hello world"
       - run: echo "Run tests"
+      - run: ruby tests/customer_success_balancing_test.rb
