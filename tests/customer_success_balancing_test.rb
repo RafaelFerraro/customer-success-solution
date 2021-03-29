@@ -70,7 +70,7 @@ class CustomerSuccessBalancingTests < Minitest::Test
     customers_repository = CustomersRepository.new(array_to_map([10, 10, 10, 20, 20, 30, 30, 30, 20, 60]))
     customer_success_repository = CustomerSuccessRepository.new(array_to_map([100, 99, 88, 3, 4, 5]), [1, 3, 2])
     balancer = CustomerSuccessBalancing.new(customer_success_repository, customers_repository)
-    assert_equal balancer.execute, 0
+    assert_equal balancer.execute, 1
   end
 
   def test_scenario_seven
